@@ -1,5 +1,0 @@
-# Content for .gitignore
-venv/
-*.pyc
-__pycache__/
-*.db
