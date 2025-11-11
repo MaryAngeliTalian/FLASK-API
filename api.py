@@ -19,6 +19,7 @@ user_args = reqparse.RequestParser()
 user_args.add_argument('name', type=str, required=True, help="Name cannot be blank")
 user_args.add_argument('email', type=str, required=True, help="Email cannot be blank")
 
+#USERFIELDS
 userFields = {
     'id':fields.Integer,
     'name':fields.String,
@@ -69,7 +70,7 @@ class User(Resource):
         users = UserModel.query.all()
         return users
 
-    
+#ENDPOINTSSS
 api.add_resource(Users, '/api/users')
 api.add_resource(User, '/api/users/<int:id>')
 
